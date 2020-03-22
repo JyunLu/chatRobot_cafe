@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>ð Hello! æ­¡è¿ä¾å°é£²åç¤¾å¤§å®¶åº­ï¼è«åå¯ä»¥æä¾æ¨çéº¼æåå¢~
+        <button>
+            <text>ç¤¾èª²æé</text>
+            <postback>ç¤¾èª²æé</postback>
+        </button>
+        <button>
+            <text>ä¸æ¬¡ç¤¾èª²å°é»</text>
+            <postback>ç¤¾èª²å°é»</postback>
+        </button>
+        <button>
+            <text>æ´å¤æå</text>
+            <postback>æ´å¤æå</postback>
+        </button>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>_ç¤¾èª²æé_ </pattern>
+    <template>å¨æ¯å¨åæéä¸é»å°ä¹é»å·ã (å¦ææç°åææ¯é¡å¤çèª²ç¨é½æå¨ç¤¾åç¼å¸è²¼æåè¨´å¤§å®¶~)</template>
+  </category>
+  
+  <category>
+      <pattern>ç¤¾èª²å°é»</pattern>
+      <template>å¨å­¸çç¬¬ä¸æ´»åä¸­å¿4æ¨çç¬¬äºæè­°å®¤å·!</template>
+  </category>
+  
+  <category>
+    <pattern>æ´å¤æå</pattern>
+    <template>
+    <carousel>
+    <card>
+        <image>https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/3b568b91361037.5e301738b0652.jpg</image>
+        <title>01 âå°ååå¡å»³</title>
+        <subtitle>æ¶èæ¸åå®¶å°ååå¡å»³ï¼ä¸ææ²åå¡åï¼åªæä½ ä¸é»é²ä¾</subtitle>
+        <button>
+            <text>å°ååå¡å»³å°å</text>
+            <postback>å°ååå¡å»³å°å</postback>
+        </button>
+    </card>
+    <card>
+        <image>https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/11606079372753.5cc0dfcd6f53a.png</image>
+        <title>02 â éæ¼åå¡</title>
+        <subtitle>åå¡ç¸½é¡å¤åï¼ææ³ä¸å¾ææ²ãè³½é¢¨ãæ©å¡ãç¾©å¼å°æ³å¼æ¿¾å£æåè³å¶ï¼æ¯ä¸é é½æåèªç¨ç¹çé¢¨å³å·</subtitle>
+        <button>
+            <text>èªè­ææ²</text>
+            <postback>èªè­ææ²</postback>
+        </button>
+        <button>
+            <text>èªè­è³½é¢¨</text>
+            <postback>èªè­è³½é¢¨</postback>
+        </button>
+    </card>
+    <card>
+        <image>https://mir-s3-cdn-cf.behance.net/project_modules/disp/d8f8d878043365.5c9caec454b08.gif</image>
+        <title>03 â æåªæ¯æ³èèå¤©</title>
+        <subtitle>ä¾è©¦è©¦AIMLçä¸äºèªæ³åå</subtitle>
+        <button>
+            <text>èåå¤©å§</text>
+            <postback>å¥½å!èèå¤©</postback>
+        </button>
+    </card>
+     </carousel>
+    </template>
+ </category>
+<category>
+    <pattern>å°ååå¡å»³å°å</pattern>
+    <template>
+        <link>
+            <text>é»æ!å å¥83éå°ååå¡å»³å°å</text>
+            <url>https://goo.gl/maps/Kzr1KeBTtHWWugmM7</url>
+        </link>
+    </template>
+</category>
+<category>
+    <pattern>å¥½å!èèå¤©</pattern>
+    <template>è½æéº¼ç¨±å¼ä½ å¢</template> 
+</category>
+<category>
+    <pattern>*</pattern>
+    <that>è½æéº¼ç¨±å¼ä½ å¢</that>
+        <template>Hello <set name="username"><star/>! </set>ä½ åæ­¡åå¡å</template> 
+</category> 
+<category><pattern>åæ­¡</pattern>
+        <that>ä½ åæ­¡åå¡å</that>
+        <template>å!é£å¤ªå¥½äº!ä½ åæ­¡åªç¨®åé å</template>
+</category>
+<category><pattern>éå¥½</pattern>
+        <that>ä½ åæ­¡åå¡å</that>
+        <template>å¿å¿!ä½ å å¥å°±ææä¸åå¡äº</template>
+</category>
+<category><pattern>*</pattern>
+        <template>ð Hello <get name="username"/> æ­¡è¿ä¾å°é£²åç¤¾å¤§å®¶åº­ï¼è«åå¯ä»¥æä¾æ¨çéº¼æåå¢~
+        <button>
+            <text>ç¤¾èª²æé</text>
+            <postback>ç¤¾èª²æé</postback>
+        </button>
+        <button>
+            <text>ä¸æ¬¡ç¤¾èª²å°é»</text>
+            <postback>ç¤¾èª²å°é»</postback>
+        </button>
+        <button>
+            <text>æ´å¤æå</text>
+            <postback>æ´å¤æå</postback>
+        </button>
+    </template>
+  </category>
+<category>
+    <pattern>hi</pattern>
+    <template><random>
+        <li> Hello! </li>
+        <li> Hi! Nice to meet you! </li>
+    </random>
+    </template> 
+</category>
+
+
+</aiml>
